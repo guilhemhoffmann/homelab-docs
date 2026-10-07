@@ -1,0 +1,73 @@
+site_name: Homelab Documentation
+site_description: Documentation technique du homelab et du studio
+site_author: Homelab
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+
+nav:
+  - Accueil: index.md
+
+  - Infrastructure:
+      - Vue d'ensemble: infrastructure/overview.md
+      - Serveurs: infrastructure/servers.md
+      - Proxmox: infrastructure/proxmox.md
+      - NAS: infrastructure/nas.md
+
+  - Réseau:
+      - Vue d'ensemble: network/overview.md
+      - VLAN: network/vlans.md
+      - Switches: network/switches.md
+      - Routeur: network/router.md
+      - Wi-Fi: network/wifi.md
+
+  - Stockage:
+      - Vue d'ensemble: storage/overview.md
+      - Synology: storage/synology.md
+      - RAID: storage/raid.md
+      - Sauvegardes: storage/backup.md
+
+  - Services:
+      - Vue d'ensemble: services/overview.md
+      - DNS: services/dns.md
+      - Tailscale: services/tailscale.md
+      - Authentification: services/authentication.md
+
+  - Audio:
+      - Vue d'ensemble: audio/overview.md
+      - Patchbay: audio/patchbay.md
+      - MIDI: audio/midi.md
+      - Maschine+: audio/maschine.md
+      - Focusrite: audio/focusrite.md
+      - MobileSheets: audio/mobilesheets.md
+
+  - Runbooks:
+      - Index: runbooks/index.md
+      - Redémarrage: runbooks/reboot.md
+      - Restauration: runbooks/restore.md
+      - Remplacement disque: runbooks/replace-disk.md
+      - Dépannage: runbooks/troubleshooting.md
+
+  - Décisions:
+      - Architecture: decisions/architecture.md
